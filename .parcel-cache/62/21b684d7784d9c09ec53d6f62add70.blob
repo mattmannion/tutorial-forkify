@@ -1,0 +1,22 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _parenetElement = new WeakMap();
+
+class RecipeView {
+  constructor() {
+    _parenetElement.set(this, {
+      writable: true,
+      value: document.querySelector('.recipe')
+    });
+  }
+
+}
+
+var _default = new RecipeView();
+
+exports.default = _default;
