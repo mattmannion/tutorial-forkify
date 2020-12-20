@@ -6,6 +6,11 @@ class ResultsView extends View {
     _errorMessage = `No recipes found... Please try again!`;
     _message = '';
 
+    _generateMarkup() {
+        this._clear();
+        return this._data.map(this._generateMarkupPreview).join('');
+    }
+
     _generateMarkupPreview(result) {
         return `
         <li class="preview">
@@ -20,10 +25,6 @@ class ResultsView extends View {
             </a>
         </li>
         `;
-    }
-
-    _generateMarkup() {
-        return this._data.map(this._generateMarkupPreview).join('');
     }
 }
 
