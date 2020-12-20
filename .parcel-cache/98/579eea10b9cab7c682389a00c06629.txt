@@ -1,12 +1,13 @@
-19654
+19655
 44/home/matt/dev/forkify/src/sass/_recipe.scss1606855476557553900 0
 42/home/matt/dev/forkify/src/sass/_base.scss1603812714000000000 0
 31/home/matt/dev/forkify/src/sass1606829864230915600 1
 35/home/matt/dev/forkify/src/js/views1608483262011977100 1
-43/home/matt/dev/forkify/src/js/controller.js1608494257705694800 0
+43/home/matt/dev/forkify/src/js/controller.js1608500665031876100 0
 39/home/matt/dev/forkify/src/js/config.js1608481711736891600 0
 37/home/matt/dev/forkify/src/index.html1607106099262233300 0
 42/home/matt/dev/forkify/src/img/favicon.png1603812714000000000 0
+32/home/matt/dev/forkify/README.md1608495613320352300 0
 51/home/matt/dev/forkify/node_modules/xtend/README.md499162500000000000 0
 65/home/matt/dev/forkify/node_modules/xmlchars/xmlns/1.0/ed3.js.map499162500000000000 0
 61/home/matt/dev/forkify/node_modules/xmlchars/xmlns/1.0/ed3.js499162500000000000 0
@@ -95,7 +96,7 @@
 102/home/matt/dev/forkify/node_modules/which-typed-array/node_modules/es-abstract/2019/SetFunctionName.js499162500000000000 0
 98/home/matt/dev/forkify/node_modules/which-typed-array/node_modules/es-abstract/2019/SecFromTime.js499162500000000000 0
 100/home/matt/dev/forkify/node_modules/which-typed-array/node_modules/es-abstract/2019/SameValueZero.js499162500000000000 0
-49/home/matt/dev/forkify/src/js/views/recipeView.js1608494671508320300 0
+49/home/matt/dev/forkify/src/js/views/recipeView.js1608499012101318900 0
 96/home/matt/dev/forkify/node_modules/which-typed-array/node_modules/es-abstract/2019/SameValue.js499162500000000000 0
 101/home/matt/dev/forkify/node_modules/which-typed-array/node_modules/es-abstract/2019/PromiseResolve.js499162500000000000 0
 109/home/matt/dev/forkify/node_modules/which-typed-array/node_modules/es-abstract/2019/OrdinarySetPrototypeOf.js499162500000000000 0
@@ -7441,7 +7442,7 @@
 87/home/matt/dev/forkify/node_modules/util.promisify/node_modules/es-abstract/2018/Get.js499162500000000000 0
 67/home/matt/dev/forkify/node_modules/caniuse-lite/data/regions/MH.js499162500000000000 0
 52/home/matt/dev/forkify/node_modules/argparse/LICENSE1424151350000000000 0
-38/home/matt/dev/forkify/dist/index.html1608494671680103700 0
+38/home/matt/dev/forkify/dist/index.html1608500665333449400 0
 56/home/matt/dev/forkify/node_modules/vendors/package.json1606830886093999300 0
 75/home/matt/dev/forkify/node_modules/@babel/plugin-transform-regenerator/lib1606830615666168800 1
 50/home/matt/dev/forkify/node_modules/@parcel/fs/src1606830879879855500 1
@@ -8673,7 +8674,7 @@
 67/home/matt/dev/forkify/node_modules/es-abstract/2015/SecFromTime.js499162500000000000 0
 48/home/matt/dev/forkify/node_modules/base/LICENSE1504833753000000000 0
 40/home/matt/dev/forkify/package-lock.json1608484892395626700 0
-46/home/matt/dev/forkify/dist/icons.cd0fc3bc.svg1608494671683095800 0
+46/home/matt/dev/forkify/dist/icons.cd0fc3bc.svg1608500665332452100 0
 61/home/matt/dev/forkify/node_modules/es-abstract/2017/floor.js499162500000000000 0
 87/home/matt/dev/forkify/node_modules/core-js-compat/node_modules/semver/functions/cmp.js499162500000000000 0
 95/home/matt/dev/forkify/node_modules/which-typed-array/node_modules/es-abstract/2017/MakeTime.js499162500000000000 0
@@ -9216,7 +9217,7 @@
 73/home/matt/dev/forkify/node_modules/es-abstract/5/ToPropertyDescriptor.js499162500000000000 0
 68/home/matt/dev/forkify/node_modules/@babel/preset-react/package.json1606830886668293100 0
 56/home/matt/dev/forkify/node_modules/minimist/test/num.js499162500000000000 0
-27/home/matt/dev/forkify/dist1608494671822742700 1
+27/home/matt/dev/forkify/dist1608500665531408200 1
 84/home/matt/dev/forkify/node_modules/@parcel/runtime-js/src/loaders/node/js-loader.js499162500000000000 0
 55/home/matt/dev/forkify/node_modules/create-hmac/LICENSE499162500000000000 0
 88/home/matt/dev/forkify/node_modules/snapdragon-node/node_modules/is-descriptor/README.md1488061756000000000 0
@@ -9735,7 +9736,7 @@
 79/home/matt/dev/forkify/node_modules/@babel/plugin-syntax-json-strings/README.md499162500000000000 0
 70/home/matt/dev/forkify/node_modules/highlight.js/lib/languages/bash.js1496198853000000000 0
 73/home/matt/dev/forkify/node_modules/morgan/node_modules/debug/src/node.js1506087100000000000 0
-49/home/matt/dev/forkify/dist/main.175afcd8.css.map1608494671783334900 0
+49/home/matt/dev/forkify/dist/main.175afcd8.css.map1608500665352420500 0
 59/home/matt/dev/forkify/node_modules/shebang-regex/readme.md1424150065000000000 0
 64/home/matt/dev/forkify/node_modules/es-abstract/2016/ToLength.js499162500000000000 0
 80/home/matt/dev/forkify/node_modules/@babel/core/node_modules/json5/dist/index.js499162500000000000 0
@@ -9965,7 +9966,7 @@
 64/home/matt/dev/forkify/node_modules/es-abstract/2020/MakeDate.js499162500000000000 0
 93/home/matt/dev/forkify/node_modules/regenerate-unicode-properties/Script_Extensions/Rejang.js499162500000000000 0
 106/home/matt/dev/forkify/node_modules/@parcel/node-resolver-core/node_modules/is-number/node_modules/kind-of1606830885751914100 1
-43/home/matt/dev/forkify/src/js/views/View.js1608491132886166900 0
+43/home/matt/dev/forkify/src/js/views/View.js1608500279548425000 0
 73/home/matt/dev/forkify/node_modules/@nodelib/fs.stat/out/types/index.d.ts499162500000000000 0
 53/home/matt/dev/forkify/node_modules/lodash/toArray.js499162500000000000 0
 74/home/matt/dev/forkify/node_modules/event-stream/test/writeArray.asynct.js1466293041000000000 0
@@ -10427,7 +10428,7 @@
 54/home/matt/dev/forkify/node_modules/ajv/lib/dot/if.jst499162500000000000 0
 66/home/matt/dev/forkify/node_modules/@babel/preset-env/lib/debug.js456789000000000000 0
 69/home/matt/dev/forkify/node_modules/core-js/stable/instance/splice.js499162500000000000 0
-45/home/matt/dev/forkify/dist/logo.3f3aa6bb.png1608494671683095800 0
+45/home/matt/dev/forkify/dist/logo.3f3aa6bb.png1608500665334446600 0
 75/home/matt/dev/forkify/node_modules/@babel/plugin-proposal-class-properties1606830886679263400 1
 62/home/matt/dev/forkify/node_modules/es-abstract/2015/modulo.js499162500000000000 0
 81/home/matt/dev/forkify/node_modules/@babel/plugin-proposal-optional-catch-binding1606830613115273300 1
@@ -10446,7 +10447,7 @@
 66/home/matt/dev/forkify/node_modules/core-js/stable/string/split.js499162500000000000 0
 75/home/matt/dev/forkify/node_modules/@babel/traverse/lib/path/replacement.js456789000000000000 0
 66/home/matt/dev/forkify/node_modules/highlight.js/styles/github.css1496198853000000000 0
-45/home/matt/dev/forkify/dist/main.175afcd8.css1608494671680103700 0
+45/home/matt/dev/forkify/dist/main.175afcd8.css1608500665333449400 0
 83/home/matt/dev/forkify/node_modules/@babel/helper-validator-identifier/package.json499162500000000000 0
 82/home/matt/dev/forkify/node_modules/@parcel/scope-hoisting/lib/formats/commonjs.js499162500000000000 0
 78/home/matt/dev/forkify/node_modules/caniuse-lite/data/features/magnetometer.js499162500000000000 0
@@ -11891,7 +11892,7 @@
 67/home/matt/dev/forkify/node_modules/caniuse-lite/data/regions/AN.js499162500000000000 0
 77/home/matt/dev/forkify/node_modules/@parcel/source-map/src/wasm/SourceMap.cpp499162500000000000 0
 63/home/matt/dev/forkify/node_modules/elliptic/node_modules/bn.js1606830617872270700 1
-54/home/matt/dev/forkify/dist/controller.d3336f5a.js.map1608494671820748600 0
+54/home/matt/dev/forkify/dist/controller.d3336f5a.js.map1608500665529826600 0
 67/home/matt/dev/forkify/node_modules/core-js/stable/instance/keys.js499162500000000000 0
 56/home/matt/dev/forkify/node_modules/coffeescript/repl.js499162500000000000 0
 66/home/matt/dev/forkify/node_modules/@babel/core/lib/config/full.js456789000000000000 0
@@ -12594,7 +12595,7 @@
 71/home/matt/dev/forkify/node_modules/cssstyle/lib/properties/fontSize.js499162500000000000 0
 106/home/matt/dev/forkify/node_modules/util.promisify/node_modules/es-abstract/2018/FromPropertyDescriptor.js499162500000000000 0
 85/home/matt/dev/forkify/node_modules/caniuse-lite/data/features/es6-string-includes.js499162500000000000 0
-50/home/matt/dev/forkify/src/js/views/resultsView.js1608480129308593500 0
+50/home/matt/dev/forkify/src/js/views/resultsView.js1608500563370207100 0
 59/home/matt/dev/forkify/node_modules/hash.js/lib/hash/sha.js499162500000000000 0
 54/home/matt/dev/forkify/node_modules/is-docker/index.js499162500000000000 0
 64/home/matt/dev/forkify/node_modules/core-js/es/array/iterator.js499162500000000000 0
@@ -16013,7 +16014,7 @@
 86/home/matt/dev/forkify/node_modules/slice-ansi/node_modules/color-convert/package.json1606830887081189900 0
 70/home/matt/dev/forkify/node_modules/core-js/stable/typed-array/sort.js499162500000000000 0
 77/home/matt/dev/forkify/node_modules/core-js/stable/string/virtual/includes.js499162500000000000 0
-48/home/matt/dev/forkify/dist/favicon.59fca306.png1608494671680103700 0
+48/home/matt/dev/forkify/dist/favicon.59fca306.png1608500665332452100 0
 74/home/matt/dev/forkify/node_modules/core-js/stable/string/virtual/index.js499162500000000000 0
 67/home/matt/dev/forkify/node_modules/js-yaml/lib/js-yaml/type/seq.js499162500000000000 0
 76/home/matt/dev/forkify/node_modules/core-js/stable/string/virtual/italics.js499162500000000000 0
@@ -16098,7 +16099,7 @@
 77/home/matt/dev/forkify/node_modules/@babel/plugin-syntax-json-strings/LICENSE499162500000000000 0
 71/home/matt/dev/forkify/node_modules/core-js/stable/typed-array/slice.js499162500000000000 0
 60/home/matt/dev/forkify/node_modules/signal-exit/package.json1606830887120085600 0
-50/home/matt/dev/forkify/dist/controller.d3336f5a.js1608494671805787800 0
+50/home/matt/dev/forkify/dist/controller.d3336f5a.js1608500665518580800 0
 46/home/matt/dev/forkify/node_modules/cssesc/man1606830618023865900 1
 106/home/matt/dev/forkify/node_modules/util.promisify/node_modules/es-abstract/2017/CreateIterResultObject.js499162500000000000 0
 51/home/matt/dev/forkify/node_modules/iferr/README.md1606830617342686600 0
@@ -18523,7 +18524,7 @@
 104/home/matt/dev/forkify/node_modules/stylehacks/node_modules/postcss-selector-parser/dist/selectors/id.js499162500000000000 0
 94/home/matt/dev/forkify/node_modules/regenerate-unicode-properties/Script_Extensions/Grantha.js499162500000000000 0
 55/home/matt/dev/forkify/node_modules/postcss/lib/rule.js499162500000000000 0
-22/home/matt/dev/forkify1608484892400613400 1
+22/home/matt/dev/forkify1608495613315365500 1
 71/home/matt/dev/forkify/node_modules/event-stream/test/connect.asynct.js1466293041000000000 0
 45/home/matt/dev/forkify/node_modules/is-number1606830617027529600 1
 60/home/matt/dev/forkify/node_modules/event-stream/test/helper1608484890885718800 1
