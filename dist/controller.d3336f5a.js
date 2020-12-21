@@ -515,7 +515,7 @@ const controlSearchResults = async function () {
     if (!query) return;
     await model.loadSearchResults(query);
 
-    _resultsView.default.render(model.getSearchResultsPage(1));
+    _resultsView.default.render(model.getSearchResultsPage());
 
     _paginationView.default.render(model.state.search);
   } catch (err) {
@@ -536,15 +536,24 @@ const controlServings = function (newServings) {
   _recipeView.default.update(model.state.recipe);
 };
 
+const controlAddBookmark = function () {
+  model.addBookmark(model.state.recipe);
+
+  _recipeView.default.update(model.state.recipe);
+};
+
 const init = function () {
   _recipeView.default.addHandlerRender(controlRecipe);
 
   _recipeView.default.addHandlerUpdateServings(controlServings);
 
+  _recipeView.default.addHandlerAddBookmark(controlAddBookmark);
+
   _searchView.default.addHandlerSearch(controlSearchResults);
 
   _paginationView.default.addHandlerClick(controlPagination);
-};
+}; //testad
+
 
 init();
 },{"core-js/modules/es.typed-array.float32-array":"d5ed5e3a2e200dcf66c948e6350ae29c","core-js/modules/es.typed-array.float64-array":"49914eeba57759547672886c5961b9e4","core-js/modules/es.typed-array.int8-array":"1fc9d0d9e9c4ca72873ee75cc9532911","core-js/modules/es.typed-array.int16-array":"6ba53210946e69387b5af65ca70f5602","core-js/modules/es.typed-array.int32-array":"52f07ad61480c3da8b1b371346f2b755","core-js/modules/es.typed-array.uint8-array":"6042ea91f038c74624be740ff17090b9","core-js/modules/es.typed-array.uint8-clamped-array":"47e53ff27a819e98075783d2516842bf","core-js/modules/es.typed-array.uint16-array":"20f511ab1a5fbdd3a99ff1f471adbc30","core-js/modules/es.typed-array.uint32-array":"8212db3659c5fe8bebc2163b12c9f547","core-js/modules/es.typed-array.from":"183d72778e0f99cedb12a04e35ea2d50","core-js/modules/es.typed-array.of":"2ee3ec99d0b3dea4fec9002159200789","core-js/modules/web.immediate":"140df4f8e97a45c53c66fead1f5a9e92","core-js/modules/web.url":"a66c25e402880ea6b966ee8ece30b6df","core-js/modules/web.url.to-json":"6357c5a053a36e38c0e24243e550dd86","core-js/modules/web.url-search-params":"2494aebefd4ca447de0ef4cfdd47509e","./model":"aabf248f40f7693ef84a0cb99f385d1f","./views/recipeView":"bcae1aced0301b01ccacb3e6f7dfede8","./views/searchView":"c5d792f7cac03ef65de30cc0fbb2cae7","./views/resultsView":"eacdbc0d50ee3d2819f3ee59366c2773","./views/paginationView":"d2063f3e7de2e4cdacfcb5eb6479db05"}],"d5ed5e3a2e200dcf66c948e6350ae29c":[function(require,module,exports) {
@@ -5072,7 +5081,7 @@ $({ target: 'URL', proto: true, enumerable: true }, {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.updateServings = exports.getSearchResultsPage = exports.loadSearchResults = exports.loadRecipe = exports.state = void 0;
+exports.addBookmark = exports.updateServings = exports.getSearchResultsPage = exports.loadSearchResults = exports.loadRecipe = exports.state = void 0;
 
 var _regeneratorRuntime = require("regenerator-runtime");
 
@@ -5087,7 +5096,8 @@ const state = {
     results: [],
     resultsPerPage: _config.RESULTS_PER_PAGE,
     page: 1
-  }
+  },
+  bookmarks: []
 };
 exports.state = state;
 
@@ -5127,6 +5137,7 @@ const loadSearchResults = async function (query) {
         image: rec.image_url
       };
     });
+    state.search.page = 1;
   } catch (err) {
     console.error(err);
     throw err;
@@ -5154,6 +5165,15 @@ const updateServings = function (newServings) {
 };
 
 exports.updateServings = updateServings;
+
+const addBookmark = function (recipe) {
+  // add bookmark
+  state.bookmarks.push(recipe); // mark current recipte as bookmark
+
+  if (recipe.id === state.recipe.id) state.recipe.bookmarked = true;
+};
+
+exports.addBookmark = addBookmark;
 },{"regenerator-runtime":"e155e0d3930b156f86c48e8d05522b16","./config":"09212d541c5c40ff2bd93475a904f8de","./helpers":"0e8dcd8a4e1c61cf18f78e1c2563655d"}],"e155e0d3930b156f86c48e8d05522b16":[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
@@ -5991,6 +6011,14 @@ class RecipeView extends _View.default {
     });
   }
 
+  addHandlerAddBookmark(handler) {
+    this._parentElement.addEventListener('click', function (e) {
+      const btn = e.target.closest('.btn--bookmark');
+      if (!btn) return;
+      handler();
+    });
+  }
+
   _generateMarkup() {
     return `
         <figure class="recipe__fig">
@@ -6034,9 +6062,9 @@ class RecipeView extends _View.default {
 
           <div class="recipe__user-generated">
           </div>
-          <button class="btn--round">
+          <button class="btn--round btn--bookmark">
             <svg class="">
-              <use href="${_icons.default}#icon-bookmark-fill"></use>
+              <use href="${_icons.default}#icon-bookmark${this._data.bookmarked ? '-fill' : ''}"></use>
             </svg>
           </button>
         </div>
@@ -6608,11 +6636,11 @@ class View {
     const newMarkup = this._generateMarkup();
 
     const newDOM = document.createRange().createContextualFragment(newMarkup);
-    const currentElements = Array.from(this._parentElement.querySelectorAll('*'));
     const newElements = Array.from(newDOM.querySelectorAll('*'));
+    const currentElements = Array.from(this._parentElement.querySelectorAll('*'));
     newElements.forEach((newEl, i) => {
       const curEl = currentElements[i];
-      if (!newEl.isEqualNode(curEl) && newEl?.firstChild.nodeValue.trim() !== '') curEl.textContent = newEl.textContent;
+      if (!newEl.isEqualNode(curEl) && newEl.firstChild?.nodeValue.trim() !== '') curEl.textContent = newEl.textContent;
       if (!newEl.isEqualNode(curEl)) Array.from(newEl.attributes).forEach(attr => curEl.setAttribute(attr.name, attr.value));
     });
   }

@@ -1,1 +1,7 @@
 node_modules
+Session.vim
+dist
+.parcel-cache
+.prettierrc
+forkify.code-workspace
+forkify

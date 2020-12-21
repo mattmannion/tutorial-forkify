@@ -17,13 +17,13 @@ export default class View {
         const newMarkup = this._generateMarkup();
 
         const newDOM = document.createRange().createContextualFragment(newMarkup);
-        const currentElements = Array.from(this._parentElement.querySelectorAll('*'));
         const newElements = Array.from(newDOM.querySelectorAll('*'));
+        const currentElements = Array.from(this._parentElement.querySelectorAll('*'));
 
         newElements.forEach((newEl, i) => {
             const curEl = currentElements[i];
 
-            if (!newEl.isEqualNode(curEl) && newEl?.firstChild.nodeValue.trim() !== '')
+            if (!newEl.isEqualNode(curEl) && newEl.firstChild?.nodeValue.trim() !== '')
                 curEl.textContent = newEl.textContent;
 
             if (!newEl.isEqualNode(curEl))

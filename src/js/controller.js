@@ -40,7 +40,7 @@ const controlSearchResults = async function () {
 
         await model.loadSearchResults(query);
 
-        resultsView.render(model.getSearchResultsPage(1));
+        resultsView.render(model.getSearchResultsPage());
 
         paginationView.render(model.state.search);
     } catch (err) {
@@ -62,11 +62,17 @@ const controlServings = function (newServings) {
     recipeView.update(model.state.recipe);
 };
 
+const controlAddBookmark = function () {
+    model.addBookmark(model.state.recipe);
+    recipeView.update(model.state.recipe);
+};
+
 const init = function () {
     recipeView.addHandlerRender(controlRecipe);
     recipeView.addHandlerUpdateServings(controlServings);
+    recipeView.addHandlerAddBookmark(controlAddBookmark);
     searchView.addHandlerSearch(controlSearchResults);
     paginationView.addHandlerClick(controlPagination);
 };
-
+//testad
 init();
